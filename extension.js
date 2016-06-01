@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Professor do Cursinho de Zoeira",
+      botName: "Professor do Cursinho",
       language: "portuguese",
       chatLink: "https://rawgit.com/B1G-B0SS/Exercito-Bot/master/lang/pt.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
@@ -58,7 +58,7 @@
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 110,
       afkRemoval: false,
       maximumDc: 30,
       bouncerPlus: true,
@@ -68,9 +68,9 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: true,
+      voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 06,
       autodisable: false,
@@ -90,14 +90,14 @@
       afkRankCheck: "ambassador",
       motdEnabled: true,
       motdInterval: 5,
-      motd: "Entrem no nosso grupo do Facebook https://www.facebook.com/groups/zoeiraneverandsplug/ caso o Plug acabe, postaremos o link de um novo site lá",
+      motd: false,
       filterChat: false,
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: "http://goo.gl/R5CLI7",
+      rulesLink: null,
       themeLink: null,
-      fbLink: "https://fb.com/groups/zoeiraneverandsplug/",
+      fbLink: null,
       youtubeLink: null,
       website: null,
       intervalMessages: [],
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/B1G-B0SS/Exercito-Bot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
 
 }).call(this);
